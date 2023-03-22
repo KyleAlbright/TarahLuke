@@ -55,7 +55,7 @@ const Hero = () => {
 
   return (
     <section className={classes.root}>
-      <Fade duration={3000} transitionDuration={1000} autoplay arrows={false} infinite={true}>
+      <Fade duration={2000} transitionDuration={1000} autoplay arrows={false} infinite={true}>
         <div className={`${classes.slideContainer} slide-container`}>
           <img src={heroImage1} alt="slide-1" className="slide-image" />
           <div className={classes.overlay}>

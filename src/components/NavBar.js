@@ -23,6 +23,9 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: "none",
     transition: "background-color 0.5s ease",
   },
+  greyAppBar: {
+    backgroundColor: "#888",
+  },
   title: {
     flexGrow: 1,
     textAlign: "left",
@@ -65,18 +68,19 @@ const Navbar = () => {
   const handleMobileMenuClose = () => {
     setMobileAnchorEl(null);
   };
+  const classes = useStyles();
+
   const trigger = useScrollTrigger({
     disableHysteresis: true,
     threshold: 100,
   });
-  const classes = useStyles();
 
   return (
     <div className={classes.root}>
-      <AppBar position="fixed" className={classes.appBar}>
+       <AppBar position="fixed" className={`${classes.appBar} ${trigger ? classes.greyAppBar : ""}`}>
         <Toolbar>
           <Link to="/" className={classes.title}>
-            <Avatar alt="Tarah Luke Logo" src={Logo} />
+            <Avatar>TL </Avatar>
           </Link>
           <Hidden mdUp>
             <IconButton
@@ -101,8 +105,8 @@ const Navbar = () => {
                 </Link>
               </MenuItem>
               <MenuItem onClick={handleMobileMenuClose}>
-                <Link to="/projects" className={`${classes.menuItem} ${classes.mobileMenuItem}`}>
-                  Projects
+                <Link to="/spaces" className={`${classes.menuItem} ${classes.mobileMenuItem}`}>
+                  Spaces
                 </Link>
               </MenuItem>
               <MenuItem onClick={handleMobileMenuClose}>
@@ -122,8 +126,8 @@ const Navbar = () => {
               <Link to="/about" className={classes.menuItem}>
                 About
               </Link>
-              <Link to="/projects" className={classes.menuItem}>
-                Projects
+              <Link to="/spaces" className={classes.menuItem}>
+                Spaces
               </Link>
               <Link to="/services" className={classes.menuItem}>
                 Services
