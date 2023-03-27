@@ -47,7 +47,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const images = [  { src: 'https://blog-www.pods.com/wp-content/uploads/2021/06/resized_FI_Getty_organized-closet.jpg.webp', text: 'Closets' },  { src: 'https://hgtvhome.sndimg.com/content/dam/images/hgtv/fullset/2020/3/26/1/Original_Brittney-Gazaway_HIWT500_Pantry-Organizer-Products_Beauty_V.jpg.rend.hgtvcom.616.924.suffix/1585249837770.jpeg', text: 'Kitchens' },  { src: 'https://cdn.mos.cms.futurecdn.net/FPRrMFj9Y4oG7Aknv9C8jL-1600-80.jpg.webp', text: 'Bathrooms' },  { src: 'https://www.familyhandyman.com/wp-content/uploads/2017/09/FH13SEP_541_50_101.jpg?resize=1024,1024', text: 'Garages' },  { src: 'https://styledegree.sg/wp-content/uploads/2020/09/A-3-Step-Guide-To-Organizing-Styling-Your-Bookshelves-Feature-Image-%E2%80%93-StyleMag.jpg', text: 'Etc' },];
+const images = [  { src: 'https://blog-www.pods.com/wp-content/uploads/2021/06/resized_FI_Getty_organized-closet.jpg.webp', text: 'Closets' },  { src: 'https://hgtvhome.sndimg.com/content/dam/images/hgtv/fullset/2020/3/26/1/Original_Brittney-Gazaway_HIWT500_Pantry-Organizer-Products_Beauty_V.jpg.rend.hgtvcom.616.924.suffix/1585249837770.jpeg', text: 'Pantries' },  { src: 'https://cdn.mos.cms.futurecdn.net/FPRrMFj9Y4oG7Aknv9C8jL-1600-80.jpg.webp', text: 'Bathrooms' },  { src: 'https://www.familyhandyman.com/wp-content/uploads/2017/09/FH13SEP_541_50_101.jpg?resize=1024,1024', text: 'Garages' },  { src: 'https://styledegree.sg/wp-content/uploads/2020/09/A-3-Step-Guide-To-Organizing-Styling-Your-Bookshelves-Feature-Image-%E2%80%93-StyleMag.jpg', text: 'Etc' },];
 
 
 function Spaces() {

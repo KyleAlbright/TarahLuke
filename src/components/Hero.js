@@ -8,6 +8,7 @@ import heroImage1 from "../assets/closetPic1.jpg";
 import heroImage2 from "../assets/kitchenPic1.jpg";
 import heroImage3 from "../assets/bathroomPic1.jpg";
 
+
 const useStyles = makeStyles((theme) => ({
   root: {
     top: 0,
@@ -18,7 +19,8 @@ const useStyles = makeStyles((theme) => ({
   slideContainer: {
     height: "calc(100vh - 64px)",
     [theme.breakpoints.up("md")]: {
-      height: "100vh",
+      height: "85vh",
+      position: "relative",
     },
     "& .slide-image": {
       objectFit: "cover",
@@ -29,10 +31,10 @@ const useStyles = makeStyles((theme) => ({
   overlay: {
     position: "absolute",
     top: 0,
-    left: 0,
-    width: "100%",
+    right: 0,
+    width: "40%",
     height: "100%",
-    backgroundColor: "rgba(0, 0, 0, 0.2)",
+    backgroundColor: "rgba(0, 0, 0, 0.35)",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
@@ -43,10 +45,10 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up("sm")]: {
       paddingBottom: theme.spacing(4),
     },
-    fontFamily: "Arial Black, sans-serif",
+    fontFamily: "'M PLUS 1p', sans-serif",
     fontWeight: "bold",
     letterSpacing: "0.1em",
-    fontSize: "5rem",
+    fontSize: "2rem",
   },
 }));
 

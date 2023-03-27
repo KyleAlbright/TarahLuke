@@ -5,7 +5,7 @@ import Typography from '@material-ui/core/Typography';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Box from '@material-ui/core/Box';
-import TarahImage from '../assets/tarahPic3.png';
+import TarahImage from '../assets/tarahPic4.jpg';
 import { KeyboardArrowLeft, KeyboardArrowRight } from '@material-ui/icons';
 import { IconButton } from '@material-ui/core';
 
@@ -103,7 +103,7 @@ const About = () => {
         </Box>
       </Grid>
       <Grid item xs={12} md={6}>
-        <Typography variant="h1">About Me</Typography>
+        
         <Box display="flex" flexDirection="column">
           <Box mb={2}>
             <Card className={classes.card}>

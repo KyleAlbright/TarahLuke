@@ -88,7 +88,7 @@ const Services = () => {
           <Card style={{ height: '100%' }}>
             <CardContent>
               <Typography variant="h5" component="h2" style={{ backfaceVisibility: 'hidden' }}>
-                {isFlipped3 ? '' : 'Services'}
+                {isFlipped3 ? '' : 'Organizing'}
               </Typography>
               <Typography variant="body2" component="p" style={{ backfaceVisibility: 'hidden' }}>
                 {isFlipped3 ? 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' : 'Click the card to flip!'}
