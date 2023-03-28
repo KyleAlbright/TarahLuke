@@ -20,7 +20,7 @@ const Services = () => {
   };
 
   return (
-    <Grid container spacing={2} justifyContent="center" alignItems="center" style={{ marginTop: '65px' }}>
+    <Grid id="services-section" container spacing={2} justifyContent="center" alignItems="center" style={{ marginTop: '65px' }}>
     <Grid item xs={12} sm={6} md={4} style={{ display: 'flex', justifyContent: 'center' }}>
       <motion.div
         whileHover={{ scale: 1.05 }}

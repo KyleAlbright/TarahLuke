@@ -12,7 +12,6 @@ import {
   Avatar,
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
-import Logo from "../assets/avatar.jpg";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -75,9 +74,23 @@ const Navbar = () => {
     threshold: 100,
   });
 
+  const handleClick = (event, id) => {
+    event.preventDefault();
+    const element = document.getElementById(id);
+    element.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest",
+    });
+  };
+
   return (
     <div className={classes.root}>
-       <AppBar position="fixed" className={`${classes.appBar} ${trigger ? classes.greyAppBar : ""}`}>
+      <AppBar
+        position="fixed"
+        className={`${classes.appBar} ${trigger ? classes.greyAppBar : ""
+          }`}
+      >
         <Toolbar>
           <Link to="/" className={classes.title}>
             <Avatar>TL </Avatar>
@@ -100,22 +113,50 @@ const Navbar = () => {
               onClose={handleMobileMenuClose}
             >
               <MenuItem onClick={handleMobileMenuClose}>
-                <Link to="/about" className={`${classes.menuItem} ${classes.mobileMenuItem}`}>
+                <Link
+                  to="about"
+                  className={`${classes.menuItem} ${classes.mobileMenuItem}`}
+                  onClick={(event) => {
+                    handleClick(event, "about-section");
+                    handleMobileMenuClose();
+                  }}
+                >
                   About
                 </Link>
               </MenuItem>
               <MenuItem onClick={handleMobileMenuClose}>
-                <Link to="/spaces" className={`${classes.menuItem} ${classes.mobileMenuItem}`}>
+                <Link
+                  to="spaces"
+                  className={`${classes.menuItem} ${classes.mobileMenuItem}`}
+                  onClick={(event) => {
+                    handleClick(event, "spaces-section");
+                    handleMobileMenuClose();
+                  }}
+                >
                   Spaces
                 </Link>
               </MenuItem>
               <MenuItem onClick={handleMobileMenuClose}>
-                <Link to="/services" className={`${classes.menuItem} ${classes.mobileMenuItem}`}>
+                <Link
+                  to="services"
+                  className={`${classes.menuItem} ${classes.mobileMenuItem}`}
+                  onClick={(event) => {
+                    handleClick(event, "services-section");
+                    handleMobileMenuClose();
+                  }}
+                >
                   Services
                 </Link>
               </MenuItem>
               <MenuItem onClick={handleMobileMenuClose}>
-                <Link to="/contact" className={`${classes.menuItem} ${classes.mobileMenuItem}`}>
+                <Link
+                  to="contact"
+                  className={`${classes.menuItem} ${classes.mobileMenuItem}`}
+                  onClick={(event) => {
+                    handleClick(event, "contact-section");
+                    handleMobileMenuClose();
+                  }}
+                >
                   Contact
                 </Link>
               </MenuItem>
@@ -123,16 +164,32 @@ const Navbar = () => {
           </Hidden>
           <div className={classes.menu}>
             <Hidden smDown>
-              <Link to="/about" className={classes.menuItem}>
+              <Link
+                to="/about"
+                className={classes.menuItem}
+                onClick={(event) => handleClick(event, "about-section")}
+              >
                 About
               </Link>
-              <Link to="/spaces" className={classes.menuItem}>
+              <Link
+                to="/spaces"
+                className={classes.menuItem}
+                onClick={(event) => handleClick(event, "spaces-section")}
+              >
                 Spaces
               </Link>
-              <Link to="/services" className={classes.menuItem}>
+              <Link
+                to="/services"
+                className={classes.menuItem}
+                onClick={(event) => handleClick(event, "services-section")}
+              >
                 Services
               </Link>
-              <Link to="/contact" className={classes.menuItem}>
+              <Link
+                to="/contact"
+                className={classes.menuItem}
+                onClick={(event) => handleClick(event, "contact-section")}
+              >
                 Contact
               </Link>
             </Hidden>
@@ -142,5 +199,6 @@ const Navbar = () => {
     </div>
   );
 };
+
 
 export default Navbar;

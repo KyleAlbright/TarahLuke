@@ -94,7 +94,7 @@ const About = () => {
   };
 
   return (
-    <Grid container className={classes.about}>
+    <Grid id="about-section" container className={classes.about}>
       <Grid item xs={12} md={6} className={classes.leftSide}>
         <Box display="flex" justifyContent="center">
           <Box className={classes.portfolioImage}>

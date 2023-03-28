@@ -16,14 +16,20 @@ const useStyles = makeStyles(() => ({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    maxHeight: "30vh",
     textAlign: "center",
-    margin: "160px",
+  },
+  form: {
+    padding: "20px",
   },
   text: {
-    width: "400px",
+    width: "100%",
     height: "5rem",
-    lineHeight: "1.6em",
+    lineHeight: "1.4em",
+  },
+  heading: {
+    fontSize: "1.5rem",
+    lineHeight: "1.2em",
+    marginBottom: "10px",
   },
   btnLogin: {
     lineHeight: "2.55rem",
@@ -37,6 +43,11 @@ const useStyles = makeStyles(() => ({
   },
   btnText: {
     color: "#fff",
+  },
+  "@media (min-width: 768px)": {
+    loginscreen: {
+      margin: "160px",
+    },
   },
 }));
 
@@ -90,7 +101,7 @@ function Contact() {
         initial="hidden"
         animate="visible"
       >
-        <form onSubmit={onHandleSubmit}>
+        <form id="contact-section" onSubmit={onHandleSubmit}>
           <div>
             <h2>Contact Form</h2>
             <TextField
