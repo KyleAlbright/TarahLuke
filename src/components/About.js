@@ -65,15 +65,15 @@ const About = () => {
   const cards = [
     {
       id: 1,
-      content: "Seitan echo park master cleanse letterpress same tattooed. Tilde aesthetic tofu, you probably haven't heard of them church-key listicle gatekeep activated charcoal selfies tonx. Iceland scenester pitchfork shabby chic migas, gatekeep 3 wolf moon meditation roof party bitters XOXO. Listicle shabby chic jean shorts grailed marxism, activated charcoal swag flexitarian lyft palo santo vibecession gorpcore schlitz. Church-key four loko waistcoat you probably haven't heard of them dreamcatcher street art. ",
+      content: `My motto is "I meet you where you are at," which means that I understand that everyone's organizational journey is different. Whether you're feeling overwhelmed by clutter, struggling to balance work and life, or just need a little help creating a more organized home, I'm here to support you every step of the way. I believe that everyone deserves to live in a home that feels calm, organized, and tailored to their unique needs. With my expertise and non-judgmental approach, I work with my clients to develop personalized solutions that make their lives easier and more streamlined.`,
     },
     {
       id: 2,
-      content: "I'm baby tousled polaroid you probably haven't heard of them, snackwave truffaut enamel pin trust fund jean shorts subway tile offal fam pork belly kitsch. Neutral milk hotel iPhone small batch live-edge affogato listicle, selfies you probably haven't heard of them tousled vexillologist. XOXO poutine jawn, cronut gochujang ascot shoreditch. Synth leggings try-hard 8-bit crucifix trust fund pok pok gatekeep taxidermy. Waistcoat edison bulb photo booth meh.",
+      content: `But I'm not just here to help you physically organize your space. As a coach, I can also work with you to develop personalized strategies that help you better manage your time, reduce your stress, and live a more fulfilling life. Whether you're just starting out and feeling overwhelmed, or you're looking for more advanced strategies to take your organization to the next level, I'm here to support you every step of the way. I'm passionate about helping people simplify their lives, reduce their stress, and create more space for the things that truly matter.`,
     },
     {
       id: 3,
-      content: "Aesthetic vice before they sold out cupping, banjo mixtape chambray skateboard put a bird on it offal messenger bag XOXO paleo cardigan. Typewriter activated charcoal street art deep v. Lomo pitchfork artisan next level, truffaut gatekeep keytar. Gluten-free cupping lumbersexual wayfarers PBR&B gentrify vape.",
+      content: `Originally from Seattle, I've always been passionate about creating order and finding ways to simplify my own life. After moving to Austin and discovering my love for helping others with their organizational needs, I decided to turn my passion into a career as a professional organizer. If you're ready to take the first step towards a more organized life, I would love to chat with you about how I can help. Let's work together to create a space that sparks joy and reduces your stress.`,
     },
   ];
 

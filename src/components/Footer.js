@@ -4,8 +4,8 @@ import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
 import InstagramIcon from "@material-ui/icons/Instagram";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import { grey } from "@material-ui/core/colors";
+import FacebookIcon from "@material-ui/icons/Facebook";
+
 
 const useStyles = makeStyles((theme) => ({
   appBar: {
@@ -41,7 +41,7 @@ export default function Footer() {
           <Toolbar>
             <div className={classes.grow} />
             <IconButton
-              href="https://www.instagram.com/"
+              href="https://www.instagram.com/tarahluke/"
               target="_blank"
               rel="noopener"
               color="inherit"
@@ -49,12 +49,12 @@ export default function Footer() {
               <InstagramIcon />
             </IconButton>
             <IconButton
-              href="https://www.linkedin.com/"
+              href="https://www.facebook.com/tarahlukeorganizing/"
               target="_blank"
               rel="noopener"
               color="inherit"
             >
-              <LinkedInIcon />
+              <FacebookIcon />
             </IconButton>
           </Toolbar>
         </AppBar>

@@ -82,6 +82,10 @@ const cardsData = [
 ];
 
 const Cards = () => {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div>
       {cardsData.map((cardData, index) => (

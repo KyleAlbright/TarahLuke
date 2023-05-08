@@ -47,14 +47,16 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   mobileMenuItem: {
-    color: "red",
+    color: "#888",
+    textDecoration: "none",
   },
   menuItem: {
     textDecoration: "none",
     color: "#fff",
     margin: theme.spacing(1),
     "&:hover": {
-      color: "#888",
+      color: "#fff",
+      transform: "translateY(-2px)",
     },
   },
 }));
@@ -84,6 +86,10 @@ const Navbar = () => {
     });
   };
 
+  const handleAvatarClick = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div className={classes.root}>
       <AppBar
@@ -93,7 +99,7 @@ const Navbar = () => {
       >
         <Toolbar>
           <Link to="/" className={classes.title}>
-            <Avatar>TL </Avatar>
+            <Avatar onClick={handleAvatarClick}>TL </Avatar>
           </Link>
           <Hidden mdUp>
             <IconButton
@@ -115,7 +121,7 @@ const Navbar = () => {
               <MenuItem onClick={handleMobileMenuClose}>
                 <Link
                   to="about"
-                  className={`${classes.menuItem} ${classes.mobileMenuItem}`}
+                  className={`${classes.mobileMenuItem} ${classes.mobileMenuItem}`}
                   onClick={(event) => {
                     handleClick(event, "about-section");
                     handleMobileMenuClose();
@@ -127,7 +133,7 @@ const Navbar = () => {
               <MenuItem onClick={handleMobileMenuClose}>
                 <Link
                   to="spaces"
-                  className={`${classes.menuItem} ${classes.mobileMenuItem}`}
+                  className={`${classes.mobileMenuItem} ${classes.mobileMenuItem}`}
                   onClick={(event) => {
                     handleClick(event, "spaces-section");
                     handleMobileMenuClose();
@@ -139,7 +145,7 @@ const Navbar = () => {
               <MenuItem onClick={handleMobileMenuClose}>
                 <Link
                   to="services"
-                  className={`${classes.menuItem} ${classes.mobileMenuItem}`}
+                  className={`${classes.mobileMenuItem} ${classes.mobileMenuItem}`}
                   onClick={(event) => {
                     handleClick(event, "services-section");
                     handleMobileMenuClose();
@@ -151,7 +157,7 @@ const Navbar = () => {
               <MenuItem onClick={handleMobileMenuClose}>
                 <Link
                   to="contact"
-                  className={`${classes.menuItem} ${classes.mobileMenuItem}`}
+                  className={`${classes.mobileMenuItem} ${classes.mobileMenuItem}`}
                   onClick={(event) => {
                     handleClick(event, "contact-section");
                     handleMobileMenuClose();
